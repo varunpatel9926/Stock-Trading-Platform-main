@@ -9,9 +9,9 @@ function Hero() {
 
             <div className='row text-center' >
 
-                <img src="media1/homeHero.png" alt="" className='mb-5'/>
+                <img src="media1/homeHero.png" alt="Hero Image" className='mb-5'/>
 
-                <h1 className='mt-5' >Invest in everthing</h1>
+                <h1 className='mt-5' >Invest in everything</h1>
 
                 <p>Online platform to invest in stocks, derivatives, mutual funds and more.</p>
 

@@ -33,10 +33,23 @@ function Navbar() {
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
               <li class="nav-item">
+
+                {/* <a 
+                  href="https://kite.zerodha.com" 
+                  className="nav-link active" 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
+                  Signup
+                </a> */}
+
+
                 <Link class="nav-link active" aria-current="page" to="/signup">
                   Signup
                 </Link>
+
               </li>
+
 
               <li class="nav-item">
                 <Link class="nav-link active" to="/about">
