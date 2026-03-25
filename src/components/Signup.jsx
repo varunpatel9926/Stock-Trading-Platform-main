@@ -199,7 +199,7 @@ function Signup() {
 
                 </div>
 
-                <p style={{marginTop:"2vh"}} ><a href="https://zerodha.com/"><img src="/zerodha-logo.svg" alt="" style={{ width:"9vh", height:"auto" }} /></a></p>
+                <p style={{marginTop:"2vh"}} ><a href="https://stock-trading-platform-main-frontend.onrender.com"><img src="/zerodha-logo.svg" alt="" style={{ width:"9vh", height:"auto" }} /></a></p>
 
                 <p style={{textAlign:"center", fontSize:"0.88vh", maxWidth:"30vh", color:"#D3D3D3", lineHeight:"1.6"}} >Zerodha Broking Limited: Member of NSE, BSE, MCX ‐ SEBI Reg. no. INZ000031633, CDSL ‐ SEBI Reg. no. IN-DP-431-2019 | Smart Online Dispute Resolution | SEBI SCORES</p>
 
