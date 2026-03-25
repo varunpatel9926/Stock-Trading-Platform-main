@@ -128,55 +128,85 @@ function Signup() {
 
     return ( 
 
-        <div className="form_container">
+        <div>
 
-            <h2>Signup Account</h2>
+            <div style={{ marginTop:"10vh", width:"100vw", display:"flex", justifyContent:"center", alignItems:"center"}} >
 
-            <form onSubmit={handleSubmit}>
+                <div className="form_container" >
 
-                <div>
+                    <div style={{display:"flex", justifyContent:"center", alignItems:"center"}} >
 
-                    <label htmlFor="email">Email</label>
+                        <img src="/kite-logo.svg" alt="" style={{height:"5rem", width:"5rem" }} />
 
-                    <input type="email" name="email" value={email} placeholder="Enter your email" onChange={handleOnChange} required />
+                        <h2 style={{fontWeight:"400"}} >Signup To Kite</h2>
+
+                    </div>
+
+                    <form onSubmit={handleSubmit}>
+
+                        <div>
+
+                            <label htmlFor="email">Email</label>
+
+                            <input type="email" name="email" value={email} placeholder="Enter your email" onChange={handleOnChange} required />
+
+                        </div>
+
+                        <div>
+
+                            <label htmlFor="username">Username</label>
+
+                            <input type="text" name="username" value={username} placeholder="Enter your username" onChange={handleOnChange} required />
+
+                        </div>
+
+                        <div>
+
+                            <label htmlFor="password">Password</label>
+
+                            <input type="password" name="password" value={password} placeholder="Enter your password" onChange={handleOnChange} required />
+
+                        </div>
+
+                        <button type="submit" disabled={loading} >
+
+                            { loading ? "Signing up..." : "Submit" }
+
+                        </button>
+
+
+                        <span>
+
+                            Already have an account? <Link to="/login">Login</Link>
+
+                        </span>
+
+                    </form>
+
+                    <ToastContainer />
 
                 </div>
 
-                <div>
+            </div>
 
-                    <label htmlFor="username">Username</label>
+            <div style={{marginTop:"5vh", width:"100vw", display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}} >
 
-                    <input type="text" name="username" value={username} placeholder="Enter your username" onChange={handleOnChange} required />
+                <div style={{ width:"8vw", display:"flex", justifyContent:"space-around", alignItems:"center"}} >
 
-                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.zerodha.kite3"><img src="/android.svg" alt="" /></a>
 
-                <div>
-
-                    <label htmlFor="password">Password</label>
-
-                    <input type="password" name="password" value={password} placeholder="Enter your password" onChange={handleOnChange} required />
+                <a href="https://apps.apple.com/in/app/kite-zerodha/id1449453802"><img src="/apple.svg" alt="" /></a>
 
                 </div>
 
-                <button type="submit" disabled={loading} >
+                <p style={{marginTop:"2vh"}} ><a href="https://zerodha.com/"><img src="/zerodha-logo.svg" alt="" style={{ width:"9vh", height:"auto" }} /></a></p>
 
-                    { loading ? "Signing up..." : "Submit" }
+                <p style={{textAlign:"center", fontSize:"0.88vh", maxWidth:"30vh", color:"#D3D3D3", lineHeight:"1.6"}} >Zerodha Broking Limited: Member of NSE, BSE, MCX ‐ SEBI Reg. no. INZ000031633, CDSL ‐ SEBI Reg. no. IN-DP-431-2019 | Smart Online Dispute Resolution | SEBI SCORES</p>
 
-                </button>
+            </div>           
 
-
-                <span>
-
-                    Already have an account? <Link to="/login">Login</Link>
-
-                </span>
-
-            </form>
-
-            <ToastContainer />
 
         </div>
-
     );
 };
 

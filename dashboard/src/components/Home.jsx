@@ -20,7 +20,7 @@ const Home = () => {
 
         const { data } = await axios.get(
 
-          "http://localhost:4000/home",
+          "http://localhost:4000/",
 
           {
 
@@ -53,9 +53,9 @@ const Home = () => {
 
   return (
     <>
-      <TopBar />
-      <h2>Welcome {user}</h2>
-      <Dashboard />
+      <TopBar user={user} />
+
+      <Dashboard user={user} />
     </>
   );
 };

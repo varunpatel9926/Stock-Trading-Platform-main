@@ -877,9 +877,9 @@ label {
 }
 
 body {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -898,11 +898,6 @@ body {
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
-.form_container > h2 {
-  margin-block: 1rem;
-  padding-block: 0.6rem;
-  color: rgba(226, 40, 40);
-}
 
 .form_container > form {
   display: flex;

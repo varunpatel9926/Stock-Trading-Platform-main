@@ -4,7 +4,7 @@ const router = require("express").Router();
 const { userVerification } = require("../Middlewares/authMiddleware");
 
 
-router.get( "/home", userVerification, ( req, res ) => {
+router.get( "/", userVerification, ( req, res ) => {
 
     res.json({
 

@@ -9,7 +9,7 @@ const { createAccessToken, createRefreshToken } = require("../util/SecretToken")
 
 module.exports.signup = async ( req, res ) => {
 
-    console.log("Signup hit");
+    // console.log("Signup hit");
 
     try{
 

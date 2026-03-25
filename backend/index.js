@@ -55,11 +55,11 @@ app.use( "/", authRoutes );
 app.use( "/", userRoutes );
 
 
-app.get( "/get", ( req, res ) => {
+// app.get( "/get", ( req, res ) => {
 
-    res.send("Auth API is running...");
+//     res.send("Auth API is running...");
 
-})
+// })
 
 
 // app.get( '/addHoldings', async( req, res ) => {
